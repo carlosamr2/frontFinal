@@ -1,0 +1,10 @@
+.navbar-light .navbar-nav .nav-link{
+    font-size:x-large;
+}
+.text-success{
+    font-size:x-large;
+}
+.mat-toolbar.mat-primary {
+    background: #37a022;
+    color: #ffffff;
+  }
