@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     HomeComponent,
     AboutComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,

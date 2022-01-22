@@ -1,0 +1,21 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+flex-basis: 25%;
+text-align: center;
+}
+.product-image img {
+max-width: 35%;
+min-width: 10%;
+}
+.product-info {
+    margin-top: 0 auto;
+}
+  @media (max-width: 920px) {
+    .product-card {
+      flex-basis: 50%;
+    }
+  }
