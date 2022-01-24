@@ -1,0 +1,152 @@
+<!-- Open Content -->
+<div class="container">
+    <div class="accordion" id="accordionExample">
+        <div class="steps">
+            <progress id="progress" value=0 max=100></progress>
+            <div class="step-item mt-4">
+                <label>1</label>
+                <div class="step-title">
+                    Verificar productos
+                </div>
+            </div>
+            <div class="step-item mt-4">
+                <label>2</label>
+                <div class="step-title">
+                    Ingresar datos
+                </div>
+            </div>
+            <div class="step-item mt-4">
+                <label>3</label>
+                <div class="step-title">
+                    Realizar el pedido
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div id="headingOne">
+
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <!-- Comienza Carrito-->
+                <div id="carrito">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover text-center">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <label for="selectedAll">Seleccionar todo</label>
+                                        <input id="selectedAll" type="checkbox">
+                                    </th>
+                                    <th>Productos</th>
+                                    <th>Precio por unidad</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio total por producto</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td><span id= "nombreproducto1">Vitamina C 500 mg 30 cápsulas</span></td>
+                                    <td>$5</td>
+                                    <td><input type="number" name="" value="4" id="cantidadproducto1"></td>
+                                    <td id="totalproducto1">$20</td>
+                                    <td><button class="btn btn-danger" >Eliminar</button></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td><span id= "nombreproducto2">Vitamina D 10MCG 100 cápsulas</span></td>
+                                    <td>$10</td>
+                                    <td><input type="number" name="" value="5" id="cantidadproducto2"></td>
+                                    <td id="totalproducto2">$50</td>
+                                    <td><button class="btn btn-danger">Eliminar</button></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td id = "totalapagar">TOTAL : $70</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Termina Carrito-->
+                <!--Botón siguiente-->
+                <div class="card-body text-center">
+                    <button class="collapsed btn btn-success abs-center" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">Siguiente</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="headingTwo">
+
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="container py-1">
+                        <div class="row py-1">
+                            <form class="col-md-9 m-auto" method="post" role="form">
+                                <div class="row">
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="inputname">Nombre Completo</label>
+                                        <input type="text" class="form-control mt-1" id="name" name="name" value="nombre por defecto">
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="inputemail">Email</label>
+                                        <input type="email" class="form-control mt-1" id="email" name="email" value="email por defecto"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="inputtelefono">Número de teléfono</label>
+                                        <input type="tel" class="form-control mt-1" id="telefono" name="telefono" value="telefono por defecto"
+                                            required>
+                                    </div>
+                                    <div class="form-group col-md-6 mb-3">
+                                        <label for="inputciudad">Ciudad</label>
+                                        <select class="form-control mt-1" id="ciudad" name="ciudad"  required>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-center mt-2 py-3">
+                                        <button class="collapsed btn btn-success" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">Anterior</button>
+                                        <button id ="segundobotonsiguiente" class="collapsed btn btn-success" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree" >Siguiente</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="headingThree">
+
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="card-body text-center " >
+                    <div class="py-5" id= "tercerpaso"></div>
+                    <button class="collapsed btn btn-success" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">Anterior</button>
+                    <button class="btn btn-success" type="submit"><a href="https://wa.me/593997545507/">Enviar al WhatsApp</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

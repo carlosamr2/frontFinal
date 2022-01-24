@@ -12,6 +12,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { DevelopersComponent } from './developers/developers.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
     FooterComponent,
     HeaderComponent,
     CatalogoComponent,
-    GraphicsComponent
+    GraphicsComponent,
+    ContactoComponent,
+    DevelopersComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
