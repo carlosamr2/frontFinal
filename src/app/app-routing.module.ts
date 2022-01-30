@@ -7,6 +7,8 @@ import { GraphicsComponent } from './graphics/graphics.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { DevelopersComponent } from './developers/developers.component';
 import { PaymentComponent } from './payment/payment.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [  
   { path: '', component: HomeComponent },
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'graphics', component: GraphicsComponent},
   { path: 'contacto', component: ContactoComponent},
   { path: 'developers', component: DevelopersComponent},
-  { path: 'pago', component: PaymentComponent}
+  { path: 'pago', component: PaymentComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({

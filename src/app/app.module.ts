@@ -15,6 +15,8 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { DevelopersComponent } from './developers/developers.component';
 import { PaymentComponent } from './payment/payment.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { PaymentComponent } from './payment/payment.component';
     GraphicsComponent,
     ContactoComponent,
     DevelopersComponent,
-    PaymentComponent
+    PaymentComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

@@ -30,11 +30,19 @@
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
-              "src/assets/css/custom.css"
+              "src/assets/css/custom.css",
+              "node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css",
+              "node_modules/admin-lte/dist/css/adminlte.min.css"
             ],
             "scripts": [
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/admin-lte/plugins/jquery/jquery.min.js",
+              "node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js",
+              "node_modules/admin-lte/dist/js/adminlte.js",
+              "node_modules/admin-lte/plugins/chart.js/Chart.min.js",
+              "node_modules/admin-lte/dist/js/demo.js",
+              "node_modules/admin-lte/dist/js/pages/dashboard3.js"
             ]
           },
           "configurations": {
