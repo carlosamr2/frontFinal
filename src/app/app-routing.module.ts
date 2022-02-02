@@ -10,6 +10,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NoAccessComponent } from './no-access/no-access.component';
+import { ReporteComponent } from './reporte/reporte.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'pago', component: PaymentComponent},
   { path: 'login', component: LoginComponent},
   { path: 'dashboard', component: DashboardComponent},
-  { path: 'noAccess', component: DashboardComponent},
+  { path: 'noAccess', component: NoAccessComponent},
+  { path: 'reporte', component: NoAccessComponent},
 ];
 
 @NgModule({

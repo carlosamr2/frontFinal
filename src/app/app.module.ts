@@ -20,6 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NoAccessComponent } from './no-access/no-access.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReporteComponent } from './reporte/reporte.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PaymentComponent,
     LoginComponent,
     DashboardComponent,
-    NoAccessComponent
+    NoAccessComponent,
+    ReporteComponent
   ],
   imports: [
     BrowserModule,
