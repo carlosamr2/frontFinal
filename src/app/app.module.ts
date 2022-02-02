@@ -18,6 +18,7 @@ import { DevelopersComponent } from './developers/developers.component';
 import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NoAccessComponent } from './no-access/no-access.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -33,7 +34,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DevelopersComponent,
     PaymentComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    NoAccessComponent
   ],
   imports: [
     BrowserModule,

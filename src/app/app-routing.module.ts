@@ -9,6 +9,7 @@ import { DevelopersComponent } from './developers/developers.component';
 import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NoAccessComponent } from './no-access/no-access.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'developers', component: DevelopersComponent},
   { path: 'pago', component: PaymentComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'dashboard', component: DashboardComponent}
+  { path: 'dashboard', component: DashboardComponent},
+  { path: 'noAccess', component: DashboardComponent},
 ];
 
 @NgModule({
