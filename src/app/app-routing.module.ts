@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'dashboard', component: DashboardComponent},
   { path: 'noAccess', component: NoAccessComponent},
-  { path: 'reporte', component: NoAccessComponent},
+  { path: 'reporte', component: ReporteComponent},
 ];
 
 @NgModule({
