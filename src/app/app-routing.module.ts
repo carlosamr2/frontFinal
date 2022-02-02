@@ -11,11 +11,11 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NoAccessComponent } from './no-access/no-access.component';
 
-const routes: Routes = [  
+const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'catalogo', component: CatalogoComponent},
-  { path: 'graphics', component: GraphicsComponent},
+  { path: 'estadisticas', component: GraphicsComponent},
   { path: 'contacto', component: ContactoComponent},
   { path: 'developers', component: DevelopersComponent},
   { path: 'pago', component: PaymentComponent},
