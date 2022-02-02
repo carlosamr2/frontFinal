@@ -17,6 +17,8 @@ import { DevelopersComponent } from './developers/developers.component';
 import { PaymentComponent } from './payment/payment.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NoAccessComponent } from './no-access/no-access.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DevelopersComponent,
     PaymentComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    NoAccessComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NgbModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
