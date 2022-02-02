@@ -29,8 +29,10 @@ export class ContactoComponent implements OnInit {
   ngOnInit(): void {}
 
   enviar(){
-    this.contactanosService.enviarFormulario(this.formulario.value).subscribe((respuesta : string) =>{
-      console.log(respuesta);
-    });
+    if(this.formulario.valid){
+      this.contactanosService.enviarFormulario(this.formulario.value).subscribe((respuesta : string) =>{
+        console.log(respuesta);
+      });
+    }
   }
 }
