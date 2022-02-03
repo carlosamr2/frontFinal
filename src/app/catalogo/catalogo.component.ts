@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ShopProductos } from '../interfaces/shopProductos';
+import { ShopProductosService } from '../services/shop-productos.service';
 
 @Component({
   selector: 'app-catalogo',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogoComponent implements OnInit {
 
-  constructor() { }
+  productos !: ShopProductos[];
+
+  constructor(private shopProductos : ShopProductosService) {
+    this.mostrarProductos();
+  }
 
   ngOnInit(): void {
+  }
+
+  mostrarProductos(){
+    this.shopProductos.obtenerProductos().subscribe((productos : ShopProductos[])=>{
+      this.productos = productos;
+    })
   }
 
 }

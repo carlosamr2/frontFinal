@@ -12,11 +12,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NoAccessComponent } from './no-access/no-access.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { ReportesComponent } from './reportes/reportes.component';
+import { ProductoComentariosComponent } from './producto-comentarios/producto-comentarios.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'catalogo', component: CatalogoComponent},
+  { path: 'catalogo/:productoID', component: ProductoComentariosComponent},
   { path: 'dashboard', component: GraphicsComponent},
   { path: 'contacto', component: ContactoComponent},
   { path: 'developers', component: DevelopersComponent},

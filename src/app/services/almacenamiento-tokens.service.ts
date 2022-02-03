@@ -17,5 +17,15 @@ export class AlmacenamientoTokensService {
   public obtenerToken(){
     return window.sessionStorage.getItem("token");
   }
+  public obtenerUsuario(){
+    const user = window.sessionStorage.getItem("user");
+    if (user)
+      return JSON.parse(user)
+    return {}
+  }
+  public saveUser(user:Token){
+    window.sessionStorage.removeItem("user");
+    window.sessionStorage.setItem("user", JSON.stringify(user.user));
+  }
 
 }

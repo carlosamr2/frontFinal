@@ -1,0 +1,43 @@
+
+<div class="container m-4">
+  <div class="row">
+    <div class="col-sm d-flex justify-content-center">
+      <div class="card h-100" style="width: 15rem">
+        <img
+          class="card-img-top"
+          src="assets/img/shop_01.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Vitamina C</h3>
+          <h4 class="card-text">$5</h4>
+          <a href="#" class="btn btn-primary">Agregar a favoritos</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <ul class="list-unstyled">
+        <li class="media" *ngFor="let comentario of comentarios; let i=index">
+          <div class="media-body" *ngIf="edit!=comentario.id; else modifying">
+            <h5 class="mt-0 mb-1">{{comentario.usuario.nombre}} {{comentario.usuario.apellido}} <span *ngIf="comentario.idUsuario == usuarioActivo"><i (click)="modificar(i)"
+              class="ml-1 mr-2  fa fa-edit"></i><i (click)="eliminar(comentario.id)"class="fa fa-trash"></i></span></h5>
+          {{comentario.comentario}}
+          </div>
+        </li>
+      </ul>
+      <form [formGroup]="form" class="text-center" (ngSubmit)="comentar()">
+        <div>
+          <textarea formControlName="comentario" style="width:100%"placeholder="Ingresa tu comentario"></textarea>
+
+        </div>
+          <button type="submit" class="btn btn-success green" > Comentar </button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<ng-template #modifying>
+    <input [formControl]="comentarioAModificar" (keyup.enter)="concretoModificacion()" style="width:100%"placeholder="Ingresa tu comentario">
+
+</ng-template>

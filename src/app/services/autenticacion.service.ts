@@ -17,6 +17,7 @@ export class AutenticacionService {
       map((token)=>{
         if (token){
           this.ats.guardarTokens(token);
+          this.ats.saveUser(token);
         }
       })
     );
