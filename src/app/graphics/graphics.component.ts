@@ -162,8 +162,10 @@ export class GraphicsComponent implements OnInit {
     this.svgPago = d3
       .select('#metodosDePago')
       .append('svg')
-      .attr('width', this.widthPago)
-      .attr('height', this.heightPago)
+      .attr('width', "100%")
+      .attr('height', "100%")
+      .attr('viewBox', '0 0 750 750')
+      .attr('overflow', 'auto')
       .append('g')
       .attr(
         'transform',
@@ -217,8 +219,10 @@ export class GraphicsComponent implements OnInit {
     this.svgLineal = d3
       .select('#totalPorMes')
       .append('svg')
-      .attr('width', this.widthLineal + this.marginLineal * 2)
-      .attr('height', this.heightLineal + this.marginLineal * 2);
+      .attr('width', "100%")
+      .attr('height', "100%")
+      .attr('viewBox', '0 0 750 750')
+      .attr('overflow', 'auto');
 
     this.gLineal = this.svgLineal
       .append('g')

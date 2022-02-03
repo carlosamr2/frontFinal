@@ -16,12 +16,11 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'catalogo', component: CatalogoComponent},
-  { path: 'estadisticas', component: GraphicsComponent},
+  { path: 'dashboard', component: GraphicsComponent},
   { path: 'contacto', component: ContactoComponent},
   { path: 'developers', component: DevelopersComponent},
   { path: 'pago', component: PaymentComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'dashboard', component: DashboardComponent},
   { path: 'noAccess', component: NoAccessComponent},
   { path: 'reporte', component: ReporteComponent},
 ];
