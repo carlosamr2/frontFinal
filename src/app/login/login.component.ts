@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AutenticacionService } from '../services/autenticacion.service';
 
 @Component({
   selector: 'app-login',
@@ -8,14 +10,30 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  form: FormGroup
+  constructor(private fb: FormBuilder, private authService:AutenticacionService) {
+    this.form = this.fb.group({
+      correo: ["",Validators.required],
+      password: ["",Validators.required]
+    })
+   }
 
   ngOnInit(): void {
   }
-  demo(){
-    fetch('http://localhost:3001/usuarios/validate?usuario=Alfredo&clave=123')
-  .then(response => response.json())
-  .then(data => console.log(data));
+  iniciarSesion(){
+    if (this.form.valid){
+      this.authService.login(this.form.value.correo,this.form.value.password).subscribe(
+        {
+          next: (r) =>{
+            console.log("Has iniciado sesión satisfactoriamente, y tu token fue almacenado.")
+          },
+          error: (r) =>{
+            console.log("Uh hoh, ha habido un problema"+r)
+
+          }
+        }
+      );
+    }
+
   }
 }

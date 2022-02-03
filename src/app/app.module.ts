@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +21,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NoAccessComponent } from './no-access/no-access.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReporteComponent } from './reporte/reporte.component';
+import { JwtInterceptor } from './interceptores/jwt.interceptor';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { ReporteComponent } from './reporte/reporte.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide:HTTP_INTERCEPTORS,useClass:JwtInterceptor,multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
