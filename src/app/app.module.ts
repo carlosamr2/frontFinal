@@ -24,6 +24,7 @@ import { ReporteComponent } from './reporte/reporte.component';
 import { JwtInterceptor } from './interceptores/jwt.interceptor';
 import { ReportesComponent } from './reportes/reportes.component';
 import { ProductoComentariosComponent } from './producto-comentarios/producto-comentarios.component';
+import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ProductoComentariosComponent } from './producto-comentarios/producto-co
     NoAccessComponent,
     ReporteComponent,
     ReportesComponent,
-    ProductoComentariosComponent
+    ProductoComentariosComponent,
+    EstadisticasComponent
   ],
   imports: [
     BrowserModule,
