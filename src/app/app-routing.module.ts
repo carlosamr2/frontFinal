@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NoAccessComponent } from './no-access/no-access.component';
 import { ReporteComponent } from './reporte/reporte.component';
+import { ReportesComponent } from './reportes/reportes.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'noAccess', component: NoAccessComponent},
   { path: 'reporte', component: ReporteComponent},
+  { path: 'reportes', component: ReportesComponent},
 ];
 
 @NgModule({

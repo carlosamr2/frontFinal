@@ -22,6 +22,7 @@ import { NoAccessComponent } from './no-access/no-access.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReporteComponent } from './reporte/reporte.component';
 import { JwtInterceptor } from './interceptores/jwt.interceptor';
+import { ReportesComponent } from './reportes/reportes.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { JwtInterceptor } from './interceptores/jwt.interceptor';
     LoginComponent,
     DashboardComponent,
     NoAccessComponent,
-    ReporteComponent
+    ReporteComponent,
+    ReportesComponent
   ],
   imports: [
     BrowserModule,
