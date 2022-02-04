@@ -26,7 +26,8 @@ const routes: Routes = [
   { path: 'noAccess', component: NoAccessComponent},
   { path: 'reporte', component: ReporteComponent},
   { path: 'reportes', component: ReportesComponent},
-  { path: 'estadisticas', component: EstadisticasComponent}
+  { path: 'estadisticas', component: EstadisticasComponent},
+  { path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({
